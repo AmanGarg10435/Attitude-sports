@@ -30,6 +30,10 @@ td, th, table{
     margin-bottom: 1vh;
 }
 
+.information{
+    font-size: 1.5vw;
+}
+
 #main-title{
     font-size: 2.5vw;
     letter-spacing: 0.4vw;
@@ -165,5 +169,20 @@ td, th, table{
 @media (max-width: 600px){
     .menubar-right{
         display: none;
+    }
+    #main-title{
+        font-size: 3.5vw;
+    }
+    .title{
+        font-size: 3.5vw;
+    }
+    #quote{
+        font-size: 5vw;
+    }
+    #source{
+        font-size: 2.5vw;
+    }
+    .information{
+        font-size: 2.5vw;
     }
 }
