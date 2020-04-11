@@ -1,0 +1,169 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    font-family: "Poppins";
+    font-size: 1.2vw;
+    color: #434343;
+    height: fit-content;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th, table{
+    border: 1px solid black;
+}
+
+.title{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 2.4vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 1vh;
+}
+
+#main-title{
+    font-size: 2.5vw;
+    letter-spacing: 0.4vw;
+}
+.contact-header{
+    color: red;
+}
+
+#quote{
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 0.7vw;
+}
+
+#source{
+    color: white;
+    font-size: 2vw;
+}
+
+
+.menubar{
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.menubar-right{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.welcome-container{
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.welcome-image{
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.information-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container2{
+    width: 80vw;
+    height: 200vh;
+}
+
+
+.container2 > *{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+
+.fade{
+    animation-name: fading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fading{
+    0%{opacity:1;}
+    100%{opacity: 0;}
+}
+
+
+.show{
+    animation-name: showing;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showing{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
+
+.gdoc{
+    width: 100%;
+    height: fit-content;
+}
+
+.testemonials{
+    margin-top: 2vh;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+}
+
+.badminton-coach-image{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.badminton-coach-text{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.end{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+@media (max-width: 600px){
+    .menubar-right{
+        display: none;
+    }
+}
